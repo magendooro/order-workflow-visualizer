@@ -1,0 +1,22 @@
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+$viewModel = $block->getViewModel();
+
+// Ensure that the ViewModel object is available
+$diagramDefinition = $viewModel ? $viewModel->getMermaidDefinition() : __('No diagram definition available.');
+?>
+<div class="admin__page-section">
+    <div id="mermaid">
+        <pre class="mermaid">
+            <?= $diagramDefinition ?>
+        </pre>
+    </div>
+</div>
+
+<!-- Load Mermaid from a CDN for convenience -->
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    mermaid.initialize({startOnLoad:true});
+});
+</script>

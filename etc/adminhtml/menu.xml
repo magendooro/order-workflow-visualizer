@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+
+        <add id="Magendoo_OrderStatusVisualizer::main"
+             title="Order Status Diagram"
+             parent="Magento_Backend::stores_settings"
+             module="Magendoo_OrderStatusVisualizer"
+             resource="Magendoo_OrderStatusVisualizer::main"
+             action="orderstatusvisualizer/index/index"
+             sortOrder="110" />
+    </menu>
+</config>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<acl xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+     xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <role id="Magento_Backend::admin">
+        <resource id="Magendoo_OrderStatusVisualizer::main" title="Order Status Visualizer" sortOrder="9000"/>
+    </role>
+</acl>
